@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Birthday PRINAKA ❤️</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;background:linear-gradient(145deg,#240718,#581b3b,#25091e);
+ color:#fff0f5;font-family:Poppins,sans-serif;text-align:center;
+ overflow-x:hidden;
+}
+section{padding:75px 20px;max-width:850px;margin:auto}
+h1,h2{font-family:'Playfair Display',serif}
+h1{font-size:clamp(48px,11vw,85px);line-height:1.1;color:#ffb5d0}
+h2{font-size:35px;color:#ffb5d0}
+p{line-height:1.9}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center}
+.small{letter-spacing:4px;color:#f7d5b0;font-size:12px}
+.heart{font-size:45px;animation:pulse 1.3s infinite}
+@keyframes pulse{50%{transform:scale(1.25)}}
+button{
+ background:linear-gradient(120deg,#f18aaa,#ad3c70);
+ border:0;color:white;padding:14px 23px;border-radius:30px;
+ font-size:15px;cursor:pointer;margin:8px;
+}
+button:active{transform:scale(.96)}
+.card{
+ background:#ffffff12;border:1px solid #ffffff30;
+ border-radius:22px;padding:25px;margin:18px auto;
+ backdrop-filter:blur(8px);
+}
+.letter{text-align:left;line-height:2}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+.tile{background:#ffffff12;border-radius:18px;padding:20px}
+.tile h3{color:#ffcbdf}
+#secret,#final{display:none}
+#secret.show,#final.show{display:block}
+#scratch{
+ width:100%;max-width:450px;height:150px;
+ background:#e9a0bc;border-radius:15px;touch-action:none;
+}
+#scratchText{
+ position:relative;max-width:450px;margin:auto;
+ padding:10px;color:#6c1741;font-family:'Playfair Display';
+ font-size:20px;
+}
+#scratchCanvas{
+ position:absolute;inset:0;width:100%;height:100%;
+ touch-action:none;border-radius:15px;
+}
+.photo{max-width:100%;max-height:300px;border-radius:20px}
+footer{padding:35px;color:#f6bdd1}
+.float{position:fixed;bottom:-40px;pointer-events:none;animation:rise 7s linear forwards}
+@keyframes rise{to{transform:translateY(-110vh);opacity:0}}
+</style>
+</head>
+<body>
+
+<section class="hero">
+ <div>
+  <div class="small">A SPECIAL DAY FOR SOMEONE SPECIAL</div>
+  <div class="heart">❤️</div>
+  <h1>Happy Birthday<br>PRINAKA</h1>
+  <p>My beautiful wife, my happiness, my forever love.</p>
+  <button onclick="go('letter')">Open Your Surprise 💌</button>
+  <p>Scroll down for more surprises ↓</p>
+ </div>
+</section>
+
+<section>
+ <div class="small">MY FAVOURITE PERSON</div>
+ <h2>You Are My Everything ❤️</h2>
+ <p>You are not just a person in my life. You are the reason behind so many of my smiles, the peace in my heart and the most beautiful part of my journey.</p>
+ <div class="heart">💕</div>
+</section>
+
+<section>
+ <div class="small">SIX REASONS</div>
+ <h2>Why I Love You</h2>
+ <div class="grid">
+  <div class="tile"><h3>🌹 Your Smile</h3><p>It makes my entire day beautiful.</p></div>
+  <div class="tile"><h3>💗 Your Heart</h3><p>Your kindness makes you special.</p></div>
+  <div class="tile"><h3>✨ Your Beauty</h3><p>You are beautiful inside and out.</p></div>
+  <div class="tile"><h3>🥰 Your Love</h3><p>It makes me feel complete.</p></div>
+  <div class="tile"><h3>🦋 Your Laughter</h3><p>My favourite sound in this world.</p></div>
+  <div class="tile"><h3>❤️ Simply You</h3><p>I love everything that makes you YOU.</p></div>
+ </div>
+</section>
+
+<section id="letter">
+ <div class="small">A LETTER FROM MY HEART</div>
+ <h2>My Dearest PRINAKA 💌</h2>
+ <div class="card letter">
+  Happy Birthday, my love! ❤️
+  <p>Today is the most beautiful day because the world was blessed with someone as wonderful as you.</p>
+  <p>I may not always have the perfect words to express my feelings, but I want you to know that you mean everything to me.</p>
+  <p>Thank you for bringing happiness into my life. Thank you for your beautiful smile, your kindness, your love and every little moment that makes our journey special.</p>
+  <p>I wish you endless happiness, good health, success and all the beautiful things your heart dreams of.</p>
+  <p>I promise to stand beside you through every high and low, support your dreams, celebrate your achievements and hold your hand through every chapter of life.</p>
+  <p>If I could choose someone to love in every lifetime, I would choose you again and again.</p>
+  <p>You are my today, my tomorrow and my forever.</p>
+  <p>Happy Birthday, my beautiful wife. Never stop smiling. I love you more than words can explain. ❤️</p>
+  <h3 style="text-align:right;color:#ffb5d0">Forever yours ❤️</h3>
+ </div>
+</section>
+
+<section>
+ <div class="small">A SECRET FOR YOU</div>
+ <h2>Open Your Secret Letter 💝</h2>
+ <p>Tap below to discover a little message.</p>
+ <button onclick="secret()">Unlock My Love ❤️</button>
+ <div class="card" id="secret">
+  <h2>You Are My Forever!</h2>
+  <p>Even on my busiest days, you are always in my thoughts. My heart has chosen you, and it will keep choosing you. ❤️</p>
+ </div>
+</section>
+
+<section>
+ <div class="small">A LITTLE GAME</div>
+ <h2>How Much Do I Love You? 😘</h2>
+ <div class="card">
+  <p>Choose the correct answer!</p>
+  <button onclick="quiz(0)">A little bit</button>
+  <button onclick="quiz(1)">More than words can say ❤️</button>
+  <button onclick="quiz(0)">Only on birthdays</button>
+  <h3 id="answer"></h3>
+ </div>
+</section>
+
+<section>
+ <div class="small">YOUR LITTLE SURPRISE</div>
+ <h2>Scratch to Reveal 💗</h2>
+ <p>Use your finger to scratch the pink card!</p>
+ <div style="position:relative;max-width:450px;margin:auto">
+  <div id="scratchText">You are my favourite person in the whole world! ❤️</div>
+  <canvas id="scratchCanvas"></canvas>
+ </div>
+ <button onclick="resetScratch()">Reset Card</button>
+</section>
+
+<section>
+ <div class="small">OUR SPECIAL MEMORIES</div>
+ <h2>Add Your Favourite Photo 📸</h2>
+ <p>Choose a photo from your phone to display here.</p>
+ <input type="file" accept="image/*" onchange="photo(event)" style="max-width:230px">
+ <div id="picture" style="margin-top:20px"></div>
+</section>
+
+<section>
+ <div class="small">THE BIGGEST WISH</div>
+ <h2>Make a Birthday Wish ✨</h2>
+ <p>Close your eyes, make a wish and tap the button!</p>
+ <button onclick="celebrate()">Celebrate My Birthday 🎉</button>
+ <div class="card" id="final">
+  <div class="heart">💖</div>
+  <h2>I LOVE YOU PRINAKA!</h2>
+  <p>May every day of your life be filled with happiness. I want a thousand more memories, a million more smiles and a lifetime of love with you.</p>
+  <h2>Happy Birthday, My Forever! ❤️</h2>
+ </div>
+</section>
+
+<footer>
+ Made with infinite love ❤️<br>
+ Exclusively for PRINAKA 🌹<br>
+ Forever and Always.
+</footer>
+
+<script>
+function go(id){
+ document.getElementById(id).scrollIntoView({behavior:'smooth'});
+}
+function secret(){
+ document.getElementById('secret').classList.toggle('show');
+}
+function quiz(n){
+ document.getElementById('answer').textContent=
+ n===1?'Correct! My love for you has no limits! ❤️':
+ 'Try again, my love! The answer is MORE THAN WORDS CAN SAY! 💕';
+}
+function photo(e){
+ const f=e.target.files[0];
+ if(!f||!f.type.startsWith('image/'))return;
+ const img=document.createElement('img');
+ img.className='photo';
+ img.src=URL.createObjectURL(f);
+ const box=document.getElementById('picture');
+ box.replaceChildren(img);
+}
+function celebrate(){
+ document.getElementById('final').style.display='block';
+ for(let i=0;i<100;i++){
+  const x=document.createElement('span');
+  x.className='float';
+  x.textContent=['❤️','💕','✨','🌹'][Math.floor(Math.random()*4)];
+  x.style.left=Math.random()*100+'vw';
+  x.style.animationDelay=Math.random()*2+'s';
+  x.style.fontSize=(18+Math.random()*20)+'px';
+  document.body.appendChild(x);
+  setTimeout(()=>x.remove(),9000);
+ }
+}
+setInterval(()=>{
+ const h=document.createElement('span');
+ h.className='float';
+ h.textContent='💗';
+ h.style.left=Math.random()*100+'vw';
+ h.style.fontSize='20px';
+ document.body.appendChild(h);
+ setTimeout(()=>h.remove(),7000);
+},1200);
+
+const canvas=document.getElementById('scratchCanvas');
+const ctx=canvas.getContext('2d');
+let drawing=false;
+function resetScratch(){
+ const rect=canvas.getBoundingClientRect();
+ const dpr=window.devicePixelRatio||1;
+ canvas.width=rect.width*dpr;
+ canvas.height=rect.height*dpr;
+ ctx.setTransform(dpr,0,0,dpr,0,0);
+ ctx.globalCompositeOperation='source-over';
+ ctx.fillStyle='#e99ab5';
+ ctx.fillRect(0,0,rect.width,rect.height);
+ ctx.fillStyle='#702044';
+ ctx.font='16px Poppins';
+ ctx.textAlign='center';
+ ctx.fillText('SCRATCH HERE ♡',rect.width/2,rect.height/2+6);
+ ctx.globalCompositeOperation='destination-out';
+}
+function scratch(e){
+ if(!drawing)return;
+ const r=canvas.getBoundingClientRect();
+ ctx.beginPath();
+ ctx.arc(e.clientX-r.left,e.clientY-r.top,23,0,Math.PI*2);
+ ctx.fill();
+}
+canvas.addEventListener('pointerdown',e=>{
+ drawing=true;
+ canvas.setPointerCapture(e.pointerId);
+ scratch(e);
+});
+canvas.addEventListener('pointermove',scratch);
+canvas.addEventListener('pointerup',()=>drawing=false);
+canvas.addEventListener('pointercancel',()=>drawing=false);
+window.addEventListener('load',resetScratch);
+window.addEventListener('resize',resetScratch);
+</script>
+</body>
+</html>
